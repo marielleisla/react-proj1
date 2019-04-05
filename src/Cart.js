@@ -10,31 +10,14 @@ class Cart extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
-        	items: [
-        		{
-					productName: "Apple",
-					price: 1,
-					count: 2
-				}, 
-				{
-					productName: "Orange",
-					price: 2,
-					count: 1
-				}
-        	]
+        	items: []
         };
         this.handleAddToCart = this.handleAddToCart.bind(this);
         this.handleRemoveFromCart = this.handleRemoveFromCart.bind(this)
     }
 
     handleAddToCart (productName, price) {
-    	var look;
-    	if (this.state.items) {
-    		look = [...this.state.items];
-    	} else {
-    		look = [];
-    	}
-    	
+    	let look = look = [...this.state.items];
     	let exists = false;
     	var i;
     	for (i = 0; i < look.length; i++) {
@@ -51,13 +34,7 @@ class Cart extends React.Component {
     }
 
     handleRemoveFromCart (productName, price) {
-    	var look;
-    	if (this.state.items) {
-    		look = [...this.state.items];
-    	} else {
-    		look = [];
-    	}
-    	
+    	let look = look = [...this.state.items];
     	let remove = false;
     	var i;
     	for (i = 0; i < look.length; i++) {
