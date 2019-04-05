@@ -22,12 +22,12 @@ const ProductData = {
         },
         {
             name: "Mango",
-            cost: 5.0,
+            cost: 2.0,
             stock: 8
         },
         {
-            name: "Rambutan",
-            cost: 5.0,
+            name: "Rambutans",
+            cost: 4.0,
             stock: 30
         },
     ]
